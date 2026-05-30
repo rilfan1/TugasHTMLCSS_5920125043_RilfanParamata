@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image rollovers and sprites</title>
+</head>
+<style>
+a.button {
+height: 36px;
+background-image: url("images/button-sprite.jpg");
+text-indent: -9999px;
+display: inline-block;}
+a#add-to-basket {
+background-image: url("add\ to\ basket.jpeg");
+width: 174px;
+background-position: 0px 0px;}
+a#framing-options {
+background-image: url("framing options.jpeg");
+width: 205px;
+background-position: 0px 0px;}
+a#add-to-basket:hover {
+background-image: url("add to basket hover.jpeg");
+background-position: 0px 0px;
+color: rgb(25, 228, 75);}
+a#framing-options:hover {
+background-image: url("framing options hover.jpeg");
+background-position: -175px -40px;
+color: rgb(25, 228, 75);}
+a#add-to-basket:active {
+background-image: url("add to basket active.jpeg");
+background-position: 0px -80px;}
+a#framing-options:active {
+background-image: url("framing options active.jpeg");
+background-position: 0px -80px;}
+</style>
+<body>
+    <a class="button" id="add-to-basket">
+       Add to basket</a>
+    <a class="button" id="framing-options">
+       Framing options</a>
+    <br><br>
+    <a href="#" class="button" id="add-to-basket"></a>
+    <a href="#" class="button" id="framing-options"></a>
+    <br><br>
+    <a href="#" class="button" id="add-to-basket"></a>
+    <a href="#" class="button" id="framing-options"></a>
+    </body>
+</html>

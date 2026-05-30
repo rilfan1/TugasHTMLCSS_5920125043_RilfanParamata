@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head> 
+  <title>Grid Layout</title> 
+  <link rel="stylesheet" type="text/css"
+    href="css/960_12_col.css" /> 
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Verdana, sans-serif;
+      color: #665544;
+      text-align: center;
+    }
+    
+    .container_12 {
+      width: 960px;
+      margin: 0 auto;
+    }
+    
+    .clearfix::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    
+    #nav, #feature, .article, #footer {
+      background-color: #eee;
+      margin-top: 20px;
+      padding: 20px 10px 10px 10px;
+    }
+    
+    #feature, .article {
+      height: 100px;
+      line-height: 30px;
+    }
+    
+    .grid_12 { width: 100%; float: left; }
+    .grid_4 { width: 31.3%; float: left; margin: 1%; }
+    
+    .grid_4:last-child { margin-right: 0; }
+    
+    li {
+      display: inline;
+      padding: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container_12 clearfix">
+    <div id="header" class="grid_12">
+      <h1>Logo</h1>
+      <div id="nav">
+        <ul>
+          <li><a href="Home">Home</a></li>
+          <li><a href="Products">Products</a></li>
+          <li><a href="Services">Services</a></li>
+          <li><a href="About">About</a></li>
+          <li><a href="Contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div id="feature" class="grid_12">
+      <p>Feature</p>
+    </div>
+    
+    <div class="article grid_4">
+      <p>Column One</p>
+    </div>
+    <div class="article grid_4">
+      <p>Column Two</p>
+    </div>
+    <div class="article grid_4">
+      <p>Column Three</p>
+    </div>
+    
+    <div id="footer" class="grid_12">
+      <p>&copy; Copyright 2011</p>
+    </div>
+  </div>
+</body>
+</html>
